@@ -131,4 +131,15 @@ print(about(**dictionary))  # I am Aniket, I'm 24 years old and I like python
 dictionary = {"age": 24, "name": "Aniket", "likes": "python"}
 print(about(**dictionary))  # I am Aniket, I'm 24 years old and I like python. Order doesn't matter
 
+# -------------------------------------------------------------------------------------------------------------------------------------------------- #
 
+
+def foo(**dict):
+    for key, value in dict.items():
+        print("{}:{}".format(key, value))
+
+
+foo(name="aniket", age=24, likes="python")
+# name: aniket
+# age: 24
+# likes:python
